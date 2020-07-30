@@ -315,6 +315,10 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer email a {
+  font-size: 0.9em;
+}
+
 footer .social-icons p i {
   font-size: 1.3125em;
 }
@@ -444,7 +448,7 @@ input[type=button] {
 }
 
 .reviews h3 {
-  width: 55%;
+  width: 80%;
   margin: 20px 0;
 }
 
@@ -535,6 +539,122 @@ input[type=button] {
   display: none;
   overflow: hidden;
   background-color: #85878b;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+.bio figure {
+  width: 40%;
+  border: solid 2px black;
+}
+
+.bio-text {
+  width: 50%;
+}
+
+.bio a {
+  color: aqua;
+}
+
+.bio a:hover {
+  color: #e2e3ed;
+}
+
+/* ====== NFNV PAGE =======*/
+
+#nfnv-page h3,
+#nfnv-page h4,
+#nfnv-page p {
+  color: #000000;
+}
+
+#nfnv-page .collapsible {
+  color: #BF4E63;
+  background-color: #000000;
+}
+
+#nfnv-page .content {
+  background-color: #ffffff;
+}
+
+#nfnv-page .content a,
+#nfnv-page .content p a,
+#nfnv-page .content .info a,
+#nfnv-page .content .info p a {
+  color: blue;
+}
+
+#nfnv-page .content a:hover,
+#nfnv-page .content a:active,
+#nfnv-page .content a:visited {
+  text-decoration: underline;
+}
+
+#nfnv-page .content a:visited {
+  color: #000000;
+}
+
+#nfnv-page footer p,
+#nfnv-page footer h4 {
+  color: #ffffff;
+}
+
+#company-contact {
+  text-align: center;
+  width: 95%;
+}
+
+.info,
+.film {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.info h3,
+.film h3 {
+  width: 90%;
+}
+
+.film figure {
+  width: 90%;
+  max-width: 500px;
+  border: solid 2px black;
+}
+
+.film p {
+  max-width: 500px;
+}
+
+.info p,
+.film p {
+  width: 90%;
+}
+
+.film a:hover {
+  color: #e2e3ed;
+}
+
+.sponsor-logo {
+  width: 75%;
+  max-width: 250px;
+  margin-bottom: 25px;
+}
+
+.sponsor-logo-big {
+  width: 55%;
+  max-width: 150px;
+  margin: 25px;
 }
 
 /* ==========================================================================
@@ -737,7 +857,6 @@ input[type=button] {
   }
 
   .reviews h3 {
-    width: 75%;
     margin: 0;
   }
   /* Footer */
@@ -818,6 +937,17 @@ input[type=button] {
       font-size: .875em;
       line-height: 1.25em;
   }
+
+/* NFNV Page */
+
+#nfnv-page header .content-wrapper {
+  justify-content: center;
+}
+
+#nfnv-page .social {
+  width: 100%;
+}
+
 }
 
 @media only screen and (min-width:1200px) {
