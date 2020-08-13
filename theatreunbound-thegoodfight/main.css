@@ -138,7 +138,6 @@ a {
   font-family: 'Libre Barcode 128 Text', cursive;
   text-align: center;
   font-weight: normal;
-  font-size: 2em;
   padding-top: 0;
   margin-top: 0;
   color: #658C3E;
@@ -288,7 +287,10 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 footer .contact {
@@ -316,7 +318,12 @@ footer .social-icons p {
 }
 
 footer email a {
-  font-size: 0.9em;
+  font-size: 0.75em;
+}
+
+footer email a i {
+  font-size: 3em;
+  padding-bottom: 0.5em;
 }
 
 footer .social-icons p i {
@@ -512,9 +519,8 @@ input[type=button] {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  /*background-color: #85878b;
-  color: #f2f0e3; */
-  color: #BF4E63;
+  /*background-color: #85878b;*/
+  color: #F2506E;
   background-color: #000000;
   cursor: pointer;
   padding: 18px;
@@ -526,7 +532,7 @@ input[type=button] {
   text-align: center;
   outline: none;
   font-size: 20px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -573,13 +579,14 @@ input[type=button] {
 
 #nfnv-page h3,
 #nfnv-page h4,
+#nfnv-page h5,
 #nfnv-page p {
   color: #000000;
 }
 
 #nfnv-page .collapsible {
-  color: #BF4E63;
-  background-color: #000000;
+  color: #F2506E;
+  background-color: #1F438C;
 }
 
 #nfnv-page .content {
@@ -613,6 +620,24 @@ input[type=button] {
   width: 95%;
 }
 
+#credit-list {
+  margin: 50px 0;
+}
+
+#actor {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#role{
+  margin-top: 0;
+  padding-top: 0.25em;
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+
+}
+
 .info,
 .film {
   width: 100%;
@@ -620,19 +645,23 @@ input[type=button] {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  margin: 25px 0;
 }
 
 .info h3,
 .film h3 {
-  width: 90%;
+  text-align: center;
 }
 
 .film figure {
   width: 90%;
   max-width: 500px;
   border: solid 2px black;
+}
+
+.info figure {
+  width: 75%;
+  max-width: 300px;
 }
 
 .film p {
@@ -642,6 +671,12 @@ input[type=button] {
 .info p,
 .film p {
   width: 90%;
+  text-align: justify;
+}
+
+#company-contact p {
+  width: 100%;
+  text-align: center;
 }
 
 .film a:hover {
